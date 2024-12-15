@@ -1,3 +1,4 @@
+-https://github.com/iamumairr/CustomIdentity/blob/master/Views/Account/Register.cshtml 
 - ASP.NET Core Web App MVC
 
 - New Folder => Data + New Class (AppDbContext)
