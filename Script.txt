@@ -394,4 +394,8 @@ namespace CustomIdentity.Controllers
 - ajouter dans _Layout.cshtml apres la derniere <ul> ligne 29 
 <partial name="_LoginPartial"/>
 
-- 
+-- pour que data table ne s'affiche que apres login faut ajouter ca dans _layout.cshtml:
+  @if (User.Identity.IsAuthenticated)
+  {
+      <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Data Table</a>
+  }
