@@ -289,7 +289,7 @@ namespace CustomIdentity.Controllers
         private readonly SignInManager<AppUser> signInManager;
         private readonly UserManager<AppUser>  userManager;
 
-        public AccountController(SignInManager<AppUser> signInManager)
+        public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
